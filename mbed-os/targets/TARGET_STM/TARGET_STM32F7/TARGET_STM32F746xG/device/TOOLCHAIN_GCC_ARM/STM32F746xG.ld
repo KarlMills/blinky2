@@ -1,7 +1,10 @@
 /* Linker script to configure memory regions. */
+/* KSM Original flash base when this was located at start of flash: 
+ *      FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 1024K  
+*/ 
 MEMORY
 { 
-  FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 1024K
+  FLASH (rx) : ORIGIN = 0x08020000, LENGTH = 1024K - 0x00020000
   RAM (rwx)  : ORIGIN = 0x200001C8, LENGTH = 320K - 0x1C8
 }
 

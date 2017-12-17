@@ -6,7 +6,7 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/features/FEATURE_LWIP/lwip-interface/lwip/src
  mbed-os/features/FEATURE_LWIP/lwip-interface/lwip/src/include/lwip/opt.h \
  mbed-os/features/FEATURE_LWIP/lwip-interface/lwipopts.h \
  mbed-os/features/FEATURE_LWIP/lwip-interface/lwip-eth/arch/TARGET_STM/lwipopts_conf.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/cmsis_os2.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
  mbed-os/features/FEATURE_LWIP/lwip-interface/lwip-sys/lwip_random.h \
  mbed-os/features/FEATURE_LWIP/lwip-interface/lwip-sys/lwip_tcp_isn.h \
  mbed-os/features/FEATURE_LWIP/lwip-interface/lwip/src/include/lwip/debug.h \
@@ -15,8 +15,11 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/features/FEATURE_LWIP/lwip-interface/lwip/src
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/stm32f7xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/stm32f746xx.h \
- mbed-os/cmsis/core_cm7.h mbed-os/cmsis/TARGET_CORTEX_M/cmsis_compiler.h \
- mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_GCC/cmsis_gcc.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/core_cm7.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_version.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_compiler.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_gcc.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/mpu_armv7.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/system_stm32f7xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal_conf.h \

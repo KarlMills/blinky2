@@ -7,8 +7,11 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/drivers/Ticker.o: \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/stm32f7xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/stm32f746xx.h \
- mbed-os/cmsis/core_cm7.h mbed-os/cmsis/TARGET_CORTEX_M/cmsis_compiler.h \
- mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_GCC/cmsis_gcc.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/core_cm7.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_version.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_compiler.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_gcc.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/mpu_armv7.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/system_stm32f7xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal_conf.h \
@@ -89,8 +92,9 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/drivers/Ticker.o: \
  mbed-os/targets/TARGET_STM/gpio_object.h mbed-os/platform/mbed_assert.h \
  mbed-os/platform/mbed_preprocessor.h \
  mbed-os/targets/TARGET_STM/PortNames.h mbed-os/hal/us_ticker_api.h \
- mbed-os/platform/NonCopyable.h mbed-os/platform/Callback.h \
+ mbed-os/platform/NonCopyable.h mbed-os/platform/mbed_toolchain.h \
+ mbed-os/platform/mbed_debug.h mbed-os/platform/Callback.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/platform/mbed_sleep.h mbed-os/hal/sleep_api.h \
- mbed-os/platform/mbed_toolchain.h mbed-os/hal/lp_ticker_api.h \
- mbed-os/platform/mbed_critical.h mbed-os/platform/FunctionPointer.h
+ mbed-os/hal/lp_ticker_api.h mbed-os/platform/mbed_critical.h \
+ mbed-os/platform/FunctionPointer.h

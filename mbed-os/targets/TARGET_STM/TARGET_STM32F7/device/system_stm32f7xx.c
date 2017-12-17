@@ -94,7 +94,37 @@
 /*!< Uncomment the following line if you need to relocate your vector Table in
      Internal SRAM. */
 /* #define VECT_TAB_SRAM */
-#define VECT_TAB_OFFSET  0x00 /*!< Vector Table base offset field. 
+//KSM OLD DEFINE was offset 0x0
+/* #define VECT_TAB_OFFSET  0x00 */
+/*!< Vector Table base offset field.  This value must be a multiple of 0x200. */
+/******************************************************************************/
+//KSM Updated the vector table to be at the start of the application space.
+//KSM The boot loader sits int the first 4 sectors and ends at 0x00017FFF
+//KSM This must be changed in conjunction with the linker file that will locate this 
+//KSM program starting at offset 0x08020000
+//KSM The Flash address space is allocated per the below table.
+//
+//|----------|-------------------------------|-----------|--------------------|
+//|  Name    |      Address on AXIM          | Sector Sz |       Use          |
+//|----------|-------------------------------|-----------|--------------------|
+//| Sector 0 |  0x0800 0000 - 0x0800 7FFF    |    32kB   |   IAP Boot Loader  |
+//|----------|-------------------------------|-----------|--------------------|
+//| Sector 1 |  0x0800 8000 - 0x0800 FFFF    |    32kB   |   IAP Boot Loader  |
+//|----------|-------------------------------|-----------|--------------------|
+//| Sector 2 |  0x0801 0000 - 0x0801 7FFF    |    32kB   |   IAP Boot Loader  |
+//|----------|-------------------------------|-----------|--------------------|
+//| Sector 3 |  0x0801 8000 - 0x0801 FFFF    |    32kB   |   IAP Boot Loader  |
+//|----------|-------------------------------|-----------|--------------------|
+//| Sector 4 |  0x0802 0000 - 0x0803 FFFF    |   128kB   |  User Application  |
+//|----------|-------------------------------|-----------|--------------------|
+//| Sector 5 |  0x0804 0000 - 0x0807 FFFF    |   256kB   |  User Application  |
+//|----------|-------------------------------|-----------|--------------------|
+//| Sector 6 |  0x0808 0000 - 0x080B FFFF    |   256kB   |  User Application  |
+//|----------|-------------------------------|-----------|--------------------|
+//| Sector 7 |  0x080C 0000 - 0x080F FFFF    |   256kB   |  User Application  |
+//|----------|-------------------------------|-----------|--------------------|
+
+#define VECT_TAB_OFFSET  0x20000 /*!< Vector Table base offset field.
                                    This value must be a multiple of 0x200. */
 /******************************************************************************/
 

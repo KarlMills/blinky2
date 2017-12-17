@@ -9,19 +9,21 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/features/netsocket/TCPServer.o: \
  mbed-os/features/netsocket/NetworkStack.h \
  mbed-os/features/netsocket/NetworkInterface.h \
  mbed-os/features/netsocket/nsapi_types.h mbed-os/rtos/Mutex.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/cmsis_os2.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos1_types.h \
  mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/rtx_os.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/cmsis_os2.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos_storage.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/rtx_lib.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/core_cm.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_lib.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_core_c.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/stm32f7xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/stm32f746xx.h \
- mbed-os/cmsis/core_cm7.h mbed-os/cmsis/TARGET_CORTEX_M/cmsis_compiler.h \
- mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_GCC/cmsis_gcc.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/core_cm7.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_version.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_compiler.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_gcc.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/mpu_armv7.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/system_stm32f7xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal_conf.h \
@@ -94,14 +96,16 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/features/netsocket/TCPServer.o: \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal_smbus.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal_mmc.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/cmsis_nvic.h \
- mbed-os/cmsis/arm_math.h mbed-os/cmsis/core_cm7.h \
- mbed-os/cmsis/tz_context.h mbed-os/rtos/TARGET_CORTEX/rtx5/rtx_os.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/rtx_evr.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/RTX_Config.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_core_cm.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/Include/os_tick.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_evr.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/RTX_Config.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtx_conf.h \
  mbed-os/targets/TARGET_STM/mbed_rtx.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtx_conf.h \
- mbed-os/platform/NonCopyable.h mbed-os/platform/Callback.h \
+ mbed-os/platform/NonCopyable.h mbed-os/platform/mbed_toolchain.h \
+ mbed-os/platform/mbed_debug.h mbed-os/platform/Callback.h \
  mbed-os/platform/mbed_assert.h mbed-os/platform/mbed_toolchain.h \
  mbed-os/features/netsocket/TCPSocket.h mbed-os/rtos/EventFlags.h \
  mbed-os/rtos/Semaphore.h mbed-os/mbed.h mbed-os/rtos/rtos.h \
@@ -109,6 +113,8 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/features/netsocket/TCPServer.o: \
  mbed-os/rtos/RtosTimer.h mbed-os/rtos/Mail.h mbed-os/rtos/Queue.h \
  mbed-os/platform/mbed_error.h mbed-os/rtos/MemoryPool.h \
  mbed-os/rtos/MemoryPool.h mbed-os/rtos/Queue.h \
+ mbed-os/rtos/ConditionVariable.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h \
  mbed-os/features/netsocket/nsapi.h \
  mbed-os/features/netsocket/EthInterface.h \
  mbed-os/features/netsocket/WiFiInterface.h \
@@ -160,12 +166,12 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/features/netsocket/TCPServer.o: \
  mbed-os/drivers/AnalogOut.h mbed-os/hal/analogout_api.h \
  mbed-os/drivers/PwmOut.h mbed-os/hal/pwmout_api.h \
  mbed-os/platform/mbed_sleep.h mbed-os/hal/sleep_api.h \
- mbed-os/platform/mbed_toolchain.h mbed-os/drivers/Serial.h \
- mbed-os/platform/Stream.h mbed-os/platform/FileLike.h \
- mbed-os/drivers/SerialBase.h mbed-os/hal/serial_api.h \
- mbed-os/hal/buffer.h mbed-os/hal/dma_api.h mbed-os/platform/CThunk.h \
- mbed-os/hal/dma_api.h mbed-os/platform/PlatformMutex.h \
- mbed-os/drivers/SPI.h mbed-os/hal/spi_api.h mbed-os/platform/CThunk.h \
+ mbed-os/drivers/Serial.h mbed-os/platform/Stream.h \
+ mbed-os/platform/FileLike.h mbed-os/drivers/SerialBase.h \
+ mbed-os/hal/serial_api.h mbed-os/hal/buffer.h mbed-os/hal/dma_api.h \
+ mbed-os/platform/CThunk.h mbed-os/hal/dma_api.h \
+ mbed-os/platform/PlatformMutex.h mbed-os/drivers/SPI.h \
+ mbed-os/hal/spi_api.h mbed-os/platform/CThunk.h \
  mbed-os/platform/CircularBuffer.h mbed-os/platform/FunctionPointer.h \
  mbed-os/platform/Transaction.h mbed-os/drivers/SPISlave.h \
  mbed-os/drivers/I2C.h mbed-os/hal/i2c_api.h mbed-os/drivers/I2CSlave.h \

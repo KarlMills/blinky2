@@ -8,8 +8,11 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/drivers/BusOut.o: \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/cmsis.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/stm32f7xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/stm32f746xx.h \
- mbed-os/cmsis/core_cm7.h mbed-os/cmsis/TARGET_CORTEX_M/cmsis_compiler.h \
- mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_GCC/cmsis_gcc.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/core_cm7.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_version.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_compiler.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/cmsis_gcc.h \
+ mbed-os/cmsis/TARGET_CORTEX_M/mpu_armv7.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/TARGET_STM32F746xG/device/system_stm32f7xx.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal.h \
  mbed-os/targets/TARGET_STM/TARGET_STM32F7/device/stm32f7xx_hal_conf.h \
@@ -90,19 +93,20 @@ BUILD/DISCO_F746NG/GCC_ARM/mbed-os/drivers/BusOut.o: \
  mbed-os/targets/TARGET_STM/gpio_object.h mbed-os/platform/mbed_assert.h \
  mbed-os/targets/TARGET_STM/PortNames.h mbed-os/hal/gpio_api.h \
  mbed-os/platform/mbed_critical.h mbed-os/platform/PlatformMutex.h \
- mbed-os/platform/NonCopyable.h mbed-os/rtos/Mutex.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/cmsis_os2.h \
+ mbed-os/platform/NonCopyable.h mbed-os/platform/mbed_toolchain.h \
+ mbed-os/platform/mbed_debug.h mbed-os/rtos/Mutex.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/Include/cmsis_os2.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos1_types.h \
  mbed-os/rtos/TARGET_CORTEX/rtx4/cmsis_os.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/rtx_os.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/cmsis_os2.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtos_storage.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/rtx_lib.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/core_cm.h mbed-os/cmsis/arm_math.h \
- mbed-os/cmsis/core_cm7.h mbed-os/cmsis/tz_context.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/rtx_os.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/rtx_evr.h \
- mbed-os/rtos/TARGET_CORTEX/rtx5/RTX_Config.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_lib.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_core_c.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/rtx_core_cm.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/Include/os_tick.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_evr.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Include/rtx_os.h \
+ mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/RTX_Config.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtx_conf.h \
  mbed-os/targets/TARGET_STM/mbed_rtx.h \
  mbed-os/rtos/TARGET_CORTEX/mbed_rtx_conf.h \
